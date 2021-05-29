@@ -1,8 +1,6 @@
 var btnContainer = document.getElementById("works__header-btns");
 
-var gallery = document.getElementById("works__slider-wrapper");
 
-var img=gallery.getElementsByClassName("works__slider-slide")
 
 // Get all buttons with class="btn" inside the container
 var btns = btnContainer.getElementsByClassName("works__header-button");
@@ -57,8 +55,7 @@ function res(){
 	 $('.slide__row').height(width);
 } res();
 
-$( window ).resize(function() {
-	res();
-});
 
-$('.mystyle').css('margin','10px')
+
+
+

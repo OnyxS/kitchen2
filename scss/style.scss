@@ -285,6 +285,7 @@ h1 {
             height: 100%;
           }
           &-text {
+            color: white;
             opacity: 0;
             @include adaptiv-font(36, 12, 1.2);
             font-style: italic;
@@ -539,4 +540,9 @@ h1 {
       }
     }
   }
+}
+
+.fslightbox-source {
+  width: 90vw !important;
+  height: auto !important;
 }

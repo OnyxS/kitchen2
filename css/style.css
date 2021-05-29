@@ -503,6 +503,7 @@ a {
 }
 
 .works__slider-slide .slide__row-item-text {
+  color: white;
   opacity: 0;
   font-style: italic;
   position: absolute;
@@ -976,4 +977,9 @@ a {
   max-height: 90vh;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.fslightbox-source {
+  width: 90vw !important;
+  height: auto !important;
 }
