@@ -58,6 +58,30 @@ h1 {
   box-sizing: inherit;
 }
 
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #b3b1b1;
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #888888;
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: #646464;
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:active {
+  background: #444444;
+  border-radius: 10px;
+}
+
 .container {
   margin: 0 11px;
 }
