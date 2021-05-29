@@ -55,6 +55,10 @@ function res(){
 	 $('.slide__row').height(width);
 } res();
 
+$( window ).resize(function() {
+	res();
+});
+
 
 
 
