@@ -59,6 +59,12 @@ $( window ).resize(function() {
 	res();
 });
 
+$(".header__end-btn").on('click',function(){
+	$(".header__end-text").toggleClass("show");
+	var replaceText=$(".header__end-text").hasClass("show") ? "Скрыть" : "Читать далее";
+	$(this).text(replaceText);
+});
+
 
 
 

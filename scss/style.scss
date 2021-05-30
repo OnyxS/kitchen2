@@ -84,6 +84,20 @@ html::-webkit-scrollbar-thumb:active {
 
 .container {
   margin: 0 11px;
+  @media (min-width: 576px) {
+    max-width: 570px;
+    margin: 0 auto;
+    padding: 0 11px;
+  }
+  @media (min-width: 767px) {
+    max-width: 760px;
+  }
+  @media (min-width: 992px) {
+    max-width: 990px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1190px;
+  }
 }
 
 .none {
@@ -180,17 +194,48 @@ html::-webkit-scrollbar-thumb:active {
   }
   &__end {
     position: relative;
+
     &-text {
       width: 41.8% !important;
       margin: 23px 0 0 0;
       @include adaptiv-font(24, 9, 0.89);
+      overflow: hidden;
+      height: 40vw;
+      @media (min-width: 1200px) {
+        height: 34vw;
+      }
     }
     &-img {
       position: absolute;
       top: 40px;
       width: 50%;
+      max-height: 700px;
       right: 0;
-      height: 100%;
+      height: 62vw;
+      @media (min-width: 576px) {
+        height: 55vw;
+      }
+      @media (min-width: 767px) {
+        top: 60px;
+        height: 55vw;
+      }
+      @media (min-width: 767px) {
+        height: 50vw;
+      }
+    }
+    &-btn {
+      @include adaptiv-font(36, 12, 1.2);
+      margin-top: 20px;
+      display: block;
+      border: 0.5px solid #000000;
+      padding: 15px 0px;
+      text-align: center;
+      box-shadow: 0px 1px 4px 0px #00000040;
+      width: 37%;
+      @media (min-width: 992px) {
+        padding: 35px 0;
+        top: 120px;
+      }
     }
     .readmore-js-toggle {
       @include adaptiv-font(36, 12, 1.2);
@@ -221,12 +266,18 @@ html::-webkit-scrollbar-thumb:active {
     &-title {
       @include adaptiv-font(48, 12, 1.2);
       display: block;
-      margin: 0 0 0 75%;
+      margin: 0 0 0 71%;
       padding-top: 76px;
+      @media (min-width: 576px) {
+        margin-left: 68%;
+      }
+      @media (min-width: 767px) {
+        margin-left: 67%;
+      }
     }
     &-btns {
       display: flex;
-      margin: 13px 0 9px 0;
+      padding: 13px 0 9px 0;
       .works__header-button {
         cursor: pointer;
         display: block;
@@ -247,7 +298,7 @@ html::-webkit-scrollbar-thumb:active {
     .studia {
       display: none;
     }
-    margin-top: 20px;
+    padding-top: 20px;
     background: linear-gradient(
       to right,
       white 53%,
@@ -569,4 +620,8 @@ html::-webkit-scrollbar-thumb:active {
 .fslightbox-source {
   width: 70vw !important;
   height: auto !important;
+}
+
+.show {
+  height: auto;
 }
