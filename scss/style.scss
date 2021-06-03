@@ -14,9 +14,14 @@ $maxWidth: 1440;
       (#{$mobSize + px} + #{$addMobSize} * ((100vw - 375px) / #{$maxWidth})) *#{$line}
     );
   }
+
   @media (min-width: 767px) {
     font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
     line-height: calc((#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}))) *#{$line};
+  }
+  @media (min-width: 1440px) {
+    font-size: #{$pcSize + px};
+    line-height: #{$pcSize + px} *#{$line};
   }
 }
 

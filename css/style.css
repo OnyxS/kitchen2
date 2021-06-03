@@ -22,6 +22,13 @@ html {
   }
 }
 
+@media (min-width: 1440px) {
+  html {
+    font-size: 24px;
+    line-height: 24px *1.2;
+  }
+}
+
 @media screen and (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -55,6 +62,13 @@ a {
   h1 {
     font-size: calc(14px + 34 * (100vw / 1440));
     line-height: calc((14px + 34 * (100vw / 1440))) *1.2;
+  }
+}
+
+@media (min-width: 1440px) {
+  h1 {
+    font-size: 48px;
+    line-height: 48px *1.2;
   }
 }
 
@@ -214,6 +228,13 @@ html::-webkit-scrollbar-thumb:active {
   }
 }
 
+@media (min-width: 1440px) {
+  .header .nav__logo-name {
+    font-size: 14px;
+    line-height: 14px *1.2;
+  }
+}
+
 @media (min-width: 992px) {
   .header .nav__logo-name {
     display: block;
@@ -255,6 +276,13 @@ html::-webkit-scrollbar-thumb:active {
   .header__form-title {
     font-size: calc(10px + 14 * (100vw / 1440));
     line-height: calc((10px + 14 * (100vw / 1440))) *1.2;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header__form-title {
+    font-size: 24px;
+    line-height: 24px *1.2;
   }
 }
 
@@ -332,6 +360,25 @@ html::-webkit-scrollbar-thumb:active {
   }
 }
 
+@media (min-width: 1440px) {
+  .header__form-inputs input::-webkit-input-placeholder {
+    font-size: 24px;
+    line-height: 24px *1.2;
+  }
+  .header__form-inputs input:-ms-input-placeholder {
+    font-size: 24px;
+    line-height: 24px *1.2;
+  }
+  .header__form-inputs input::-ms-input-placeholder {
+    font-size: 24px;
+    line-height: 24px *1.2;
+  }
+  .header__form-inputs input::placeholder {
+    font-size: 24px;
+    line-height: 24px *1.2;
+  }
+}
+
 .header__form-inputs input:first-child {
   width: 45.2%;
 }
@@ -358,6 +405,13 @@ html::-webkit-scrollbar-thumb:active {
   .header__end-text {
     font-size: calc(9px + 15 * (100vw / 1440));
     line-height: calc((9px + 15 * (100vw / 1440))) *0.89;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header__end-text {
+    font-size: 24px;
+    line-height: 24px *0.89;
   }
 }
 
@@ -420,6 +474,13 @@ html::-webkit-scrollbar-thumb:active {
   }
 }
 
+@media (min-width: 1440px) {
+  .header__end-btn {
+    font-size: 36px;
+    line-height: 36px *1.2;
+  }
+}
+
 @media (min-width: 992px) {
   .header__end-btn {
     padding: 35px 0;
@@ -454,6 +515,13 @@ html::-webkit-scrollbar-thumb:active {
   }
 }
 
+@media (min-width: 1440px) {
+  .header__end .readmore-js-toggle {
+    font-size: 36px;
+    line-height: 36px *1.2;
+  }
+}
+
 @media (min-width: 992px) {
   .header__end .readmore-js-toggle {
     padding: 35px 0;
@@ -483,6 +551,13 @@ html::-webkit-scrollbar-thumb:active {
   .works__header-title {
     font-size: calc(12px + 36 * (100vw / 1440));
     line-height: calc((12px + 36 * (100vw / 1440))) *1.2;
+  }
+}
+
+@media (min-width: 1440px) {
+  .works__header-title {
+    font-size: 48px;
+    line-height: 48px *1.2;
   }
 }
 
@@ -525,6 +600,13 @@ html::-webkit-scrollbar-thumb:active {
   .works__header-btns .works__header-button {
     font-size: calc(9px + 27 * (100vw / 1440));
     line-height: calc((9px + 27 * (100vw / 1440))) *1.2;
+  }
+}
+
+@media (min-width: 1440px) {
+  .works__header-btns .works__header-button {
+    font-size: 36px;
+    line-height: 36px *1.2;
   }
 }
 
@@ -648,6 +730,13 @@ html::-webkit-scrollbar-thumb:active {
   }
 }
 
+@media (min-width: 1440px) {
+  .works__slider-slide .slide__row-item-text {
+    font-size: 36px;
+    line-height: 36px *1.2;
+  }
+}
+
 .works__slider-slide .slide__row-item:hover .slide__row-item-bg {
   opacity: 1;
 }
@@ -681,6 +770,13 @@ html::-webkit-scrollbar-thumb:active {
   }
 }
 
+@media (min-width: 1440px) {
+  .comment__header-title {
+    font-size: 48px;
+    line-height: 48px *1.2;
+  }
+}
+
 .comment__header-text {
   color: black;
   text-align: center;
@@ -698,6 +794,13 @@ html::-webkit-scrollbar-thumb:active {
   .comment__header-text {
     font-size: calc(10px + 14 * (100vw / 1440));
     line-height: calc((10px + 14 * (100vw / 1440))) *1.2;
+  }
+}
+
+@media (min-width: 1440px) {
+  .comment__header-text {
+    font-size: 24px;
+    line-height: 24px *1.2;
   }
 }
 
@@ -791,6 +894,13 @@ html::-webkit-scrollbar-thumb:active {
   .comment__slider .comment__slide-form-name {
     font-size: calc(12px + 24 * (100vw / 1440));
     line-height: calc((12px + 24 * (100vw / 1440))) *1.2;
+  }
+}
+
+@media (min-width: 1440px) {
+  .comment__slider .comment__slide-form-name {
+    font-size: 36px;
+    line-height: 36px *1.2;
   }
 }
 
@@ -916,6 +1026,13 @@ html::-webkit-scrollbar-thumb:active {
   }
 }
 
+@media (min-width: 1440px) {
+  .call__title {
+    font-size: 48px;
+    line-height: 48px *1.2;
+  }
+}
+
 @media (max-width: 767px) {
   .call-text {
     font-size: calc( 10px + 23.8 * ((100vw - 375px) / 1440));
@@ -927,6 +1044,13 @@ html::-webkit-scrollbar-thumb:active {
   .call-text {
     font-size: calc(10px + 14 * (100vw / 1440));
     line-height: calc((10px + 14 * (100vw / 1440))) *1.2;
+  }
+}
+
+@media (min-width: 1440px) {
+  .call-text {
+    font-size: 24px;
+    line-height: 24px *1.2;
   }
 }
 
@@ -966,6 +1090,13 @@ html::-webkit-scrollbar-thumb:active {
   }
 }
 
+@media (min-width: 1440px) {
+  .call__form-title {
+    font-size: 36px;
+    line-height: 36px *1.2;
+  }
+}
+
 @media (min-width: 992px) {
   .call__form-title {
     margin-bottom: 40px;
@@ -991,6 +1122,13 @@ html::-webkit-scrollbar-thumb:active {
   .call__form-input {
     font-size: calc(9px + 27 * (100vw / 1440));
     line-height: calc((9px + 27 * (100vw / 1440))) *1.2;
+  }
+}
+
+@media (min-width: 1440px) {
+  .call__form-input {
+    font-size: 36px;
+    line-height: 36px *1.2;
   }
 }
 
@@ -1027,6 +1165,13 @@ html::-webkit-scrollbar-thumb:active {
   }
 }
 
+@media (min-width: 1440px) {
+  .call__form-btn {
+    font-size: 36px;
+    line-height: 36px *1.2;
+  }
+}
+
 @media (min-width: 992px) {
   .call__form-btn {
     margin: 91px auto 42px;
@@ -1048,6 +1193,13 @@ html::-webkit-scrollbar-thumb:active {
   .call__form-call {
     font-size: calc(9px + 27 * (100vw / 1440));
     line-height: calc((9px + 27 * (100vw / 1440))) *1.2;
+  }
+}
+
+@media (min-width: 1440px) {
+  .call__form-call {
+    font-size: 36px;
+    line-height: 36px *1.2;
   }
 }
 
