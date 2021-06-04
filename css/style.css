@@ -142,32 +142,32 @@ html::-webkit-scrollbar-thumb:active {
 }
 
 .header {
-  background: url(../img/bg-header.png) no-repeat 100% 72px, -webkit-gradient(linear, left top, left bottom, color-stop(26%, transparent), color-stop(6%, #574c4a8f));
-  background: url(../img/bg-header.png) no-repeat 100% 72px, linear-gradient(transparent 26%, #574c4a8f 6%);
-  background-size: 91%;
+  background: url(../img/header__bg-second.jpg) no-repeat 100% 72px, -webkit-gradient(linear, left top, left bottom, color-stop(26%, transparent), color-stop(6%, #574c4a8f));
+  background: url(../img/header__bg-second.jpg) no-repeat 100% 72px, linear-gradient(transparent 26%, #574c4a8f 6%);
+  background-size: 78%;
 }
 
 @media (min-width: 767px) {
   .header {
-    background: url(../img/header__bg-desk.png) no-repeat 100% 130px, -webkit-gradient(linear, left top, left bottom, color-stop(26%, transparent), color-stop(6%, #574c4a8f));
-    background: url(../img/header__bg-desk.png) no-repeat 100% 130px, linear-gradient(transparent 26%, #574c4a8f 6%);
-    background-size: 92%;
+    background: url(../img/header__bg-second.jpg) no-repeat 100% 130px, -webkit-gradient(linear, left top, left bottom, color-stop(26%, transparent), color-stop(6%, #574c4a8f));
+    background: url(../img/header__bg-second.jpg) no-repeat 100% 130px, linear-gradient(transparent 26%, #574c4a8f 6%);
+    background-size: 78%;
   }
 }
 
 @media (min-width: 992px) {
   .header {
-    background: url(../img/bg-header.png) no-repeat 100% 190px, -webkit-gradient(linear, left top, left bottom, color-stop(26%, transparent), color-stop(6%, #574c4a8f));
-    background: url(../img/bg-header.png) no-repeat 100% 190px, linear-gradient(transparent 26%, #574c4a8f 6%);
-    background-size: 92%;
+    background: url(../img/header__bg-second.jpg) no-repeat 100% 190px, -webkit-gradient(linear, left top, left bottom, color-stop(26%, transparent), color-stop(6%, #574c4a8f));
+    background: url(../img/header__bg-second.jpg) no-repeat 100% 190px, linear-gradient(transparent 26%, #574c4a8f 6%);
+    background-size: 71%;
   }
 }
 
 @media (min-width: 1440px) {
   .header {
-    background: url(../img/header__bg-desk.png) no-repeat 100% 220px, -webkit-gradient(linear, left top, left bottom, color-stop(26%, transparent), color-stop(6%, #574c4a8f));
-    background: url(../img/header__bg-desk.png) no-repeat 100% 220px, linear-gradient(transparent 26%, #574c4a8f 6%);
-    background-size: 92%;
+    background: url(../img/header__bg-second.jpg) no-repeat 100% 220px, -webkit-gradient(linear, left top, left bottom, color-stop(26%, transparent), color-stop(6%, #574c4a8f));
+    background: url(../img/header__bg-second.jpg) no-repeat 100% 220px, linear-gradient(transparent 26%, #574c4a8f 6%);
+    background-size: 65%;
   }
 }
 
@@ -208,8 +208,9 @@ html::-webkit-scrollbar-thumb:active {
 }
 
 .header .nav__logo-name {
+  font-weight: 600;
+  color: #1a1c35;
   letter-spacing: 1px;
-  color: black;
   display: none;
   text-transform: uppercase;
 }

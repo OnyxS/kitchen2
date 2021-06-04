@@ -114,23 +114,23 @@ html::-webkit-scrollbar-thumb:active {
 }
 
 .header {
-  background: url(../img/bg-header.png) no-repeat 100% 72px,
+  background: url(../img/header__bg-second.jpg) no-repeat 100% 72px,
     linear-gradient(transparent 26%, #574c4a8f 6%);
-  background-size: 91%;
+  background-size: 78%;
   @media (min-width: 767px) {
-    background: url(../img/header__bg-desk.png) no-repeat 100% 130px,
+    background: url(../img/header__bg-second.jpg) no-repeat 100% 130px,
       linear-gradient(transparent 26%, #574c4a8f 6%);
-    background-size: 92%;
+    background-size: 78%;
   }
   @media (min-width: 992px) {
-    background: url(../img/bg-header.png) no-repeat 100% 190px,
+    background: url(../img/header__bg-second.jpg) no-repeat 100% 190px,
       linear-gradient(transparent 26%, #574c4a8f 6%);
-    background-size: 92%;
+    background-size: 71%;
   }
   @media (min-width: 1440px) {
-    background: url(../img/header__bg-desk.png) no-repeat 100% 220px,
+    background: url(../img/header__bg-second.jpg) no-repeat 100% 220px,
       linear-gradient(transparent 26%, #574c4a8f 6%);
-    background-size: 92%;
+    background-size: 65%;
   }
 
   .nav {
@@ -150,8 +150,10 @@ html::-webkit-scrollbar-thumb:active {
         }
       }
       &-name {
+        font-weight: 600;
+        color: #1a1c35;
         letter-spacing: 1px;
-        color: black;
+
         @include adaptiv-font(14, 9, 1.2);
         display: none;
         text-transform: uppercase;
