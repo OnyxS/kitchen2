@@ -116,7 +116,13 @@ html::-webkit-scrollbar-thumb:active {
 .header {
   background: url(../img/header__bg-second.jpg) no-repeat 100% 72px,
     linear-gradient(transparent 26%, #574c4a8f 6%);
-  background-size: 78%;
+  background-size: 85%;
+  @media (min-width: 576px) {
+    background: url(../img/header__bg-second.jpg) no-repeat 100% 130px,
+      linear-gradient(transparent 26%, #574c4a8f 6%);
+    background-size: 80%;
+  }
+
   @media (min-width: 767px) {
     background: url(../img/header__bg-second.jpg) no-repeat 100% 130px,
       linear-gradient(transparent 26%, #574c4a8f 6%);
@@ -125,12 +131,12 @@ html::-webkit-scrollbar-thumb:active {
   @media (min-width: 992px) {
     background: url(../img/header__bg-second.jpg) no-repeat 100% 190px,
       linear-gradient(transparent 26%, #574c4a8f 6%);
-    background-size: 71%;
+    background-size: 73%;
   }
   @media (min-width: 1440px) {
     background: url(../img/header__bg-second.jpg) no-repeat 100% 220px,
       linear-gradient(transparent 26%, #574c4a8f 6%);
-    background-size: 65%;
+    background-size: 70%;
   }
 
   .nav {
@@ -216,6 +222,8 @@ html::-webkit-scrollbar-thumb:active {
       position: absolute;
       top: 40px;
       width: 50%;
+      object-position: center;
+      object-fit: cover;
       max-height: 700px;
       right: 0;
       height: 62vw;
@@ -364,6 +372,8 @@ html::-webkit-scrollbar-thumb:active {
 
           &-img {
             width: 100%;
+            object-fit: cover;
+            object-position: center;
             height: 100%;
           }
           &-text {
