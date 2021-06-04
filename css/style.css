@@ -825,10 +825,24 @@ html::-webkit-scrollbar-thumb:active {
   background: #574c4a8f;
   padding-top: 23px;
   padding-bottom: 20px;
+  height: 156vw;
+}
+
+@media (min-width: 576px) {
+  .comment__slider {
+    height: 100%;
+  }
+}
+
+@media (min-width: 767px) {
+  .comment__slider {
+    height: 135vw;
+  }
 }
 
 @media (min-width: 992px) {
   .comment__slider {
+    height: 100%;
     padding-bottom: 40px;
   }
 }
@@ -951,33 +965,52 @@ html::-webkit-scrollbar-thumb:active {
 
 .comment__slider .comment__slide-imgs-big {
   margin-top: 18px;
+  margin-bottom: 10px;
   text-align: center;
+  height: 50vw;
+  max-height: 430px;
 }
 
 .comment__slider .comment__slide-imgs-big img {
   width: 62.2%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 @media (min-width: 992px) {
   .comment__slider .comment__slide-imgs-big img {
     width: 95%;
+    height: 100%;
   }
 }
 
 .comment__slider .comment__slide-imgs-small {
   margin: 0 auto;
-  width: 80.7%;
+  width: 90%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 30vw;
+  gap: 10px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.comment__slider .comment__slide-imgs-small a {
+  width: 100%;
+  height: 100%;
 }
 
 @media (min-width: 576px) {
   .comment__slider .comment__slide-imgs-small {
     width: 90%;
-    margin: 0;
+    margin: 0 auto;
   }
 }
 
@@ -986,36 +1019,43 @@ html::-webkit-scrollbar-thumb:active {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 85%;
-    margin: 0;
+    width: 100%;
+    height: 20vw;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 1200px) {
   .comment__slider .comment__slide-imgs-small {
-    width: 75%;
+    width: 100%;
   }
 }
 
 .comment__slider .comment__slide-imgs-small img {
   width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 40vw;
 }
 
 @media (min-width: 576px) {
   .comment__slider .comment__slide-imgs-small img {
-    width: 180%;
+    width: 100%;
   }
 }
 
 @media (min-width: 992px) {
   .comment__slider .comment__slide-imgs-small img {
-    width: 180%;
+    width: 100%;
   }
 }
 
 @media (min-width: 1200px) {
   .comment__slider .comment__slide-imgs-small img {
-    width: 205%;
+    width: 100%;
   }
 }
 

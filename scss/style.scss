@@ -425,7 +425,16 @@ html::-webkit-scrollbar-thumb:active {
     background: #574c4a8f;
     padding-top: 23px;
     padding-bottom: 20px;
+    height: 156vw;
+    @media (min-width: 576px) {
+      height: 100%;
+    }
+    @media (min-width: 767px) {
+      height: 135vw;
+    }
+
     @media (min-width: 992px) {
+      height: 100%;
       padding-bottom: 40px;
     }
     .swiper-pagination-bullets {
@@ -485,47 +494,68 @@ html::-webkit-scrollbar-thumb:active {
       &-imgs {
         flex-direction: column;
         justify-content: center;
+
         @media (min-width: 992px) {
           width: 44%;
           margin-right: 56px;
         }
         &-big {
           margin-top: 18px;
+          margin-bottom: 10px;
           text-align: center;
+          height: 50vw;
+          max-height: 430px;
           img {
             width: 62.2%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
             @media (min-width: 992px) {
               width: 95%;
+              height: 100%;
             }
           }
         }
         &-small {
           margin: 0 auto;
-          width: 80.7%;
+          width: 90%;
+          align-items: flex-start;
+
           display: flex;
+          height: 30vw;
+          gap: 10px;
           justify-content: space-around;
+          a {
+            width: 100%;
+            height: 100%;
+          }
           @media (min-width: 576px) {
             width: 90%;
-            margin: 0;
+            margin: 0 auto;
           }
           @media (min-width: 992px) {
             justify-content: space-between;
-            width: 85%;
-            margin: 0;
+            width: 100%;
+            height: 20vw;
+            margin: 0 auto;
           }
           @media (min-width: 1200px) {
-            width: 75%;
+            width: 100%;
           }
           img {
             width: 100%;
+            height: 100%;
+            object-position: center;
+            object-fit: cover;
+            max-height: 40vw;
             @media (min-width: 576px) {
-              width: 180%;
+              width: 100%;
             }
             @media (min-width: 992px) {
-              width: 180%;
+              width: 100%;
             }
             @media (min-width: 1200px) {
-              width: 205%;
+              width: 100%;
             }
           }
         }
