@@ -27,7 +27,7 @@ $maxWidth: 1440;
 
 html {
   box-sizing: border-box;
-  font-family: "Gravity";
+  font-family: "Cormorant Garamond", serif;
   color: white;
   @include adaptiv-font(24, 9, 1.2);
   font-weight: 300;
@@ -179,35 +179,47 @@ html::-webkit-scrollbar-thumb:active {
   &__form {
     width: 72.5%;
     margin: 50% 0 36px auto;
-    background: white;
+    background: #554a48;
     border: 0.5px solid #000000;
     padding: 10px;
     &-title {
-      color: black;
+      color: white;
       margin-bottom: 5px;
       @include adaptiv-font(24, 10, 1.2);
     }
     &-inputs {
       width: 100%;
+      margin: 28px 0 15px 25px;
       display: flex;
       input {
-        border: 0.5px solid #7b7b7b;
+        background: #c1b1a2;
+        border-radius: 5px;
+        border: 0.5px solid #c1b1a2;
         width: 21.4%;
+        margin-right: 10px;
         &::placeholder {
           @include adaptiv-font(24, 7, 1.2);
-          color: #999999;
-          font-style: italic;
+          color: white;
+
           font-weight: 400;
         }
       }
-      input:first-child {
-        width: 45.2%;
+
+      a {
+        display: block;
+        padding: 5px 20px;
+        background: #c1b1a2;
+        border-radius: 5px;
+        border: 0.5px solid #c1b1a2;
+        color: white;
+        font-weight: 400;
+        margin-left: 50px;
       }
     }
   }
   &__end {
     position: relative;
-
+    padding-bottom: 52px;
     &-text {
       width: 41.8% !important;
       margin: 23px 0 0 0;
@@ -300,7 +312,7 @@ html::-webkit-scrollbar-thumb:active {
         color: white;
         @include adaptiv-font(36, 9, 1.2);
         font-style: italic;
-        padding: 6px 19px 4px 23px;
+        padding: 28px 75px 26px;
       }
       .active,
       .works__header-button:hover {
@@ -470,7 +482,13 @@ html::-webkit-scrollbar-thumb:active {
         font-style: italic;
         color: black;
         width: 67.3%;
-        background: #dbd9d8;
+        background: linear-gradient(
+          to bottom,
+          #dbd9d8,
+          #dbd9d8 70%,
+          rgba(87, 76, 74, 0) 100% 30%
+        );
+
         box-shadow: 0px 4px 4px 0px #00000040;
         margin: 0 auto;
         @media (min-width: 992px) {
@@ -489,6 +507,7 @@ html::-webkit-scrollbar-thumb:active {
         &-text {
           margin-left: 7.4%;
           width: 80.7%;
+          font-weight: 700;
         }
       }
       &-imgs {
@@ -575,17 +594,40 @@ html::-webkit-scrollbar-thumb:active {
   &-text {
     @include adaptiv-font(24, 10, 1.2);
   }
-  &__form {
+  &__content {
+    margin-top: 351px;
+    display: flex;
+    align-items: flex-start;
+  }
+  &__form-img {
+    width: 38%;
+    height: 100%;
     text-align: center;
     color: black;
-    width: 90.8%;
+    background: url(../img/forn-img.png);
+    background-color: #c4c4c4d9;
+    background-blend-mode: screen;
+    padding: 0 38px;
+    &-title {
+      font-weight: 400;
+      margin: 193px 0 144px;
+    }
+  }
+  &__form {
+    text-align: center;
+    color: white;
+    width: 62%;
     padding: 18px 0;
-    background-color: white;
+    background: #554a48;
+
     box-shadow: 0px 4px 4px 0px #00000040;
-    margin: 30px auto 0;
+
     @media (min-width: 992px) {
       padding: 40px 0;
-      width: 60.4%;
+      width: 62%;
+    }
+    a {
+      color: white;
     }
     &-title {
       @include adaptiv-font(36, 12, 1.2);
@@ -600,7 +642,10 @@ html::-webkit-scrollbar-thumb:active {
       margin-bottom: 30px;
       border: 0;
       padding-left: 5px;
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid white;
+      color: #ffffff59;
+      background: #554a48;
+
       @media (min-width: 992px) {
         margin-bottom: 70px;
       }
@@ -609,8 +654,9 @@ html::-webkit-scrollbar-thumb:active {
       margin: 0 auto 17px;
       display: block;
       width: 88.8%;
-      padding: 7px 0;
-      background: #59403c80;
+      padding: 13px 0;
+      background: #8a7a77;
+
       border: 1px solid #574c4a;
       box-shadow: 0px 4px 4px 0px #00000040;
       color: white;

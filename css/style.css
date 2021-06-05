@@ -2,7 +2,7 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Gravity";
+  font-family: "Cormorant Garamond", serif;
   color: white;
   font-weight: 300;
   scroll-behavior: smooth;
@@ -264,13 +264,13 @@ html::-webkit-scrollbar-thumb:active {
 .header__form {
   width: 72.5%;
   margin: 50% 0 36px auto;
-  background: white;
+  background: #554a48;
   border: 0.5px solid #000000;
   padding: 10px;
 }
 
 .header__form-title {
-  color: black;
+  color: white;
   margin-bottom: 5px;
 }
 
@@ -297,37 +297,37 @@ html::-webkit-scrollbar-thumb:active {
 
 .header__form-inputs {
   width: 100%;
+  margin: 28px 0 15px 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .header__form-inputs input {
-  border: 0.5px solid #7b7b7b;
+  background: #c1b1a2;
+  border-radius: 5px;
+  border: 0.5px solid #c1b1a2;
   width: 21.4%;
+  margin-right: 10px;
 }
 
 .header__form-inputs input::-webkit-input-placeholder {
-  color: #999999;
-  font-style: italic;
+  color: white;
   font-weight: 400;
 }
 
 .header__form-inputs input:-ms-input-placeholder {
-  color: #999999;
-  font-style: italic;
+  color: white;
   font-weight: 400;
 }
 
 .header__form-inputs input::-ms-input-placeholder {
-  color: #999999;
-  font-style: italic;
+  color: white;
   font-weight: 400;
 }
 
 .header__form-inputs input::placeholder {
-  color: #999999;
-  font-style: italic;
+  color: white;
   font-weight: 400;
 }
 
@@ -388,12 +388,20 @@ html::-webkit-scrollbar-thumb:active {
   }
 }
 
-.header__form-inputs input:first-child {
-  width: 45.2%;
+.header__form-inputs a {
+  display: block;
+  padding: 5px 20px;
+  background: #c1b1a2;
+  border-radius: 5px;
+  border: 0.5px solid #c1b1a2;
+  color: white;
+  font-weight: 400;
+  margin-left: 50px;
 }
 
 .header__end {
   position: relative;
+  padding-bottom: 52px;
 }
 
 .header__end-text {
@@ -599,7 +607,7 @@ html::-webkit-scrollbar-thumb:active {
   background: #554a48;
   color: white;
   font-style: italic;
-  padding: 6px 19px 4px 23px;
+  padding: 28px 75px 26px;
 }
 
 @media (max-width: 767px) {
@@ -895,7 +903,8 @@ html::-webkit-scrollbar-thumb:active {
   font-style: italic;
   color: black;
   width: 67.3%;
-  background: #dbd9d8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#dbd9d8), color-stop(70%, #dbd9d8), to(rgba(87, 76, 74, 0)));
+  background: linear-gradient(to bottom, #dbd9d8, #dbd9d8 70%, rgba(87, 76, 74, 0) 100% 30%);
   -webkit-box-shadow: 0px 4px 4px 0px #00000040;
           box-shadow: 0px 4px 4px 0px #00000040;
   margin: 0 auto;
@@ -944,6 +953,7 @@ html::-webkit-scrollbar-thumb:active {
 .comment__slider .comment__slide-form-text {
   margin-left: 7.4%;
   width: 80.7%;
+  font-weight: 700;
 }
 
 .comment__slider .comment__slide-imgs {
@@ -1111,22 +1121,51 @@ html::-webkit-scrollbar-thumb:active {
   }
 }
 
-.call__form {
+.call__content {
+  margin-top: 351px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.call__form-img {
+  width: 38%;
+  height: 100%;
   text-align: center;
   color: black;
-  width: 90.8%;
+  background: url(../img/forn-img.png);
+  background-color: #c4c4c4d9;
+  background-blend-mode: screen;
+  padding: 0 38px;
+}
+
+.call__form-img-title {
+  font-weight: 400;
+  margin: 193px 0 144px;
+}
+
+.call__form {
+  text-align: center;
+  color: white;
+  width: 62%;
   padding: 18px 0;
-  background-color: white;
+  background: #554a48;
   -webkit-box-shadow: 0px 4px 4px 0px #00000040;
           box-shadow: 0px 4px 4px 0px #00000040;
-  margin: 30px auto 0;
 }
 
 @media (min-width: 992px) {
   .call__form {
     padding: 40px 0;
-    width: 60.4%;
+    width: 62%;
   }
+}
+
+.call__form a {
+  color: white;
 }
 
 .call__form-title {
@@ -1165,7 +1204,9 @@ html::-webkit-scrollbar-thumb:active {
   margin-bottom: 30px;
   border: 0;
   padding-left: 5px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
+  color: #ffffff59;
+  background: #554a48;
 }
 
 @media (max-width: 767px) {
@@ -1199,8 +1240,8 @@ html::-webkit-scrollbar-thumb:active {
   margin: 0 auto 17px;
   display: block;
   width: 88.8%;
-  padding: 7px 0;
-  background: #59403c80;
+  padding: 13px 0;
+  background: #8a7a77;
   border: 1px solid #574c4a;
   -webkit-box-shadow: 0px 4px 4px 0px #00000040;
           box-shadow: 0px 4px 4px 0px #00000040;
