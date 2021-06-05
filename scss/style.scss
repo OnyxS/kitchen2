@@ -180,7 +180,7 @@ html::-webkit-scrollbar-thumb:active {
     width: 72.5%;
     margin: 50% 0 36px auto;
     background: #554a48;
-    border: 0.5px solid #000000;
+    border: 0.5px solid #554a48;
     padding: 10px;
     &-title {
       color: white;
@@ -189,8 +189,11 @@ html::-webkit-scrollbar-thumb:active {
     }
     &-inputs {
       width: 100%;
-      margin: 28px 0 15px 25px;
+
       display: flex;
+      @media (min-width: 992px) {
+        margin: 28px 0 15px 25px;
+      }
       input {
         background: #c1b1a2;
         border-radius: 5px;
@@ -207,13 +210,16 @@ html::-webkit-scrollbar-thumb:active {
 
       a {
         display: block;
-        padding: 5px 20px;
         background: #c1b1a2;
         border-radius: 5px;
+        padding: 1px 7px;
         border: 0.5px solid #c1b1a2;
         color: white;
         font-weight: 400;
         margin-left: 50px;
+        @media (min-width: 992px) {
+          padding: 5px 20px;
+        }
       }
     }
   }
@@ -255,12 +261,12 @@ html::-webkit-scrollbar-thumb:active {
       margin-top: 20px;
       display: block;
       border: 0.5px solid #000000;
-      padding: 15px 0px;
+      padding: 7px 0px;
       text-align: center;
       box-shadow: 0px 1px 4px 0px #00000040;
-      width: 37%;
+      width: 28%;
       @media (min-width: 992px) {
-        padding: 35px 0;
+        padding: 20px 0;
         top: 120px;
       }
     }
@@ -305,14 +311,20 @@ html::-webkit-scrollbar-thumb:active {
     &-btns {
       display: flex;
       padding: 13px 0 9px 0;
+      width: 60%;
       .works__header-button {
+        width: 100%;
         cursor: pointer;
         display: block;
         background: #554a48;
         color: white;
         @include adaptiv-font(36, 9, 1.2);
         font-style: italic;
-        padding: 28px 75px 26px;
+        padding: 5px 0 5px;
+        text-align: center;
+        @media (min-width: 992px) {
+          padding: 28px 0;
+        }
       }
       .active,
       .works__header-button:hover {
@@ -595,28 +607,45 @@ html::-webkit-scrollbar-thumb:active {
     @include adaptiv-font(24, 10, 1.2);
   }
   &__content {
-    margin-top: 351px;
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    @media (min-width: 992px) {
+      flex-direction: row;
+      margin-top: 351px;
+    }
   }
   &__form-img {
-    width: 38%;
-    height: 100%;
-    text-align: center;
-    color: black;
-    background: url(../img/forn-img.png);
-    background-color: #c4c4c4d9;
-    background-blend-mode: screen;
-    padding: 0 38px;
+    width: 100%;
+    color: white;
+    text-align: right;
+    @media (min-width: 992px) {
+      width: 37%;
+      color: black;
+      text-align: center;
+      background: transparent;
+      background: url(../img/forn-img.png);
+      background-color: #c4c4c4d9;
+      background-blend-mode: screen;
+      padding: 0 38px;
+    }
+
     &-title {
+      margin-bottom: 18px;
       font-weight: 400;
-      margin: 193px 0 144px;
+      @media (min-width: 992px) {
+        margin: 193px 0 144px;
+      }
+    }
+    &-text {
+      margin-bottom: 31px;
     }
   }
   &__form {
     text-align: center;
     color: white;
-    width: 62%;
+
+    width: 100%;
     padding: 18px 0;
     background: #554a48;
 
@@ -624,7 +653,7 @@ html::-webkit-scrollbar-thumb:active {
 
     @media (min-width: 992px) {
       padding: 40px 0;
-      width: 62%;
+      width: 63%;
     }
     a {
       color: white;
