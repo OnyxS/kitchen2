@@ -315,6 +315,10 @@ html::-webkit-scrollbar-thumb:active {
   margin-right: 10px;
 }
 
+.header__form-inputs input:focus-visible {
+  outline: none;
+}
+
 .header__form-inputs input::-webkit-input-placeholder {
   color: white;
   font-weight: 400;
@@ -609,7 +613,7 @@ html::-webkit-scrollbar-thumb:active {
   display: -ms-flexbox;
   display: flex;
   padding: 13px 0 9px 0;
-  width: 60%;
+  width: 55%;
 }
 
 .works__header-btns .works__header-button {
@@ -646,7 +650,7 @@ html::-webkit-scrollbar-thumb:active {
 
 @media (min-width: 992px) {
   .works__header-btns .works__header-button {
-    padding: 28px 0;
+    padding: 20px 0;
   }
 }
 
@@ -1157,7 +1161,7 @@ html::-webkit-scrollbar-thumb:active {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin-top: 351px;
+    margin-top: 100px;
   }
 }
 
@@ -1276,6 +1280,10 @@ html::-webkit-scrollbar-thumb:active {
     font-size: 36px;
     line-height: 36px *1.2;
   }
+}
+
+.call__form-input:focus-visible {
+  outline: none;
 }
 
 @media (min-width: 992px) {

@@ -198,6 +198,9 @@ html::-webkit-scrollbar-thumb:active {
         border: 0.5px solid #c1b1a2;
         width: 21.4%;
         margin-right: 10px;
+        &:focus-visible {
+          outline: none;
+        }
         &::placeholder {
           @include adaptiv-font(24, 7, 1.2);
           color: white;
@@ -309,7 +312,7 @@ html::-webkit-scrollbar-thumb:active {
     &-btns {
       display: flex;
       padding: 13px 0 9px 0;
-      width: 60%;
+      width: 55%;
       .works__header-button {
         width: 100%;
         cursor: pointer;
@@ -321,7 +324,7 @@ html::-webkit-scrollbar-thumb:active {
         padding: 5px 0 5px;
         text-align: center;
         @media (min-width: 992px) {
-          padding: 28px 0;
+          padding: 20px 0;
         }
       }
       .active,
@@ -610,7 +613,7 @@ html::-webkit-scrollbar-thumb:active {
     width: 100%;
     @media (min-width: 992px) {
       flex-direction: row;
-      margin-top: 351px;
+      margin-top: 100px;
     }
   }
   &__form-img {
@@ -672,7 +675,9 @@ html::-webkit-scrollbar-thumb:active {
       border-bottom: 1px solid white;
       color: #ffffff59;
       background: #554a48;
-
+      &:focus-visible {
+        outline: none;
+      }
       @media (min-width: 992px) {
         margin-bottom: 70px;
       }
