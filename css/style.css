@@ -143,14 +143,14 @@ html::-webkit-scrollbar-thumb:active {
 .header {
   background: url(../img/header__bg-second.jpg) no-repeat 100% 72px, -webkit-gradient(linear, left top, left bottom, color-stop(26%, transparent), color-stop(6%, #574c4a8f));
   background: url(../img/header__bg-second.jpg) no-repeat 100% 72px, linear-gradient(transparent 26%, #574c4a8f 6%);
-  background-size: 85%;
+  background-size: 100% 40%;
 }
 
 @media (min-width: 576px) {
   .header {
     background: url(../img/header__bg-second.jpg) no-repeat 100% 130px, -webkit-gradient(linear, left top, left bottom, color-stop(26%, transparent), color-stop(6%, #574c4a8f));
     background: url(../img/header__bg-second.jpg) no-repeat 100% 130px, linear-gradient(transparent 26%, #574c4a8f 6%);
-    background-size: 80%;
+    background-size: 100% 40%;
   }
 }
 
@@ -158,7 +158,7 @@ html::-webkit-scrollbar-thumb:active {
   .header {
     background: url(../img/header__bg-second.jpg) no-repeat 100% 130px, -webkit-gradient(linear, left top, left bottom, color-stop(26%, transparent), color-stop(6%, #574c4a8f));
     background: url(../img/header__bg-second.jpg) no-repeat 100% 130px, linear-gradient(transparent 26%, #574c4a8f 6%);
-    background-size: 78%;
+    background-size: 100% 40%;
   }
 }
 
@@ -166,7 +166,7 @@ html::-webkit-scrollbar-thumb:active {
   .header {
     background: url(../img/header__bg-second.jpg) no-repeat 100% 190px, -webkit-gradient(linear, left top, left bottom, color-stop(26%, transparent), color-stop(6%, #574c4a8f));
     background: url(../img/header__bg-second.jpg) no-repeat 100% 190px, linear-gradient(transparent 26%, #574c4a8f 6%);
-    background-size: 73%;
+    background-size: 100% 40%;
   }
 }
 
@@ -174,7 +174,7 @@ html::-webkit-scrollbar-thumb:active {
   .header {
     background: url(../img/header__bg-second.jpg) no-repeat 100% 220px, -webkit-gradient(linear, left top, left bottom, color-stop(26%, transparent), color-stop(6%, #574c4a8f));
     background: url(../img/header__bg-second.jpg) no-repeat 100% 220px, linear-gradient(transparent 26%, #574c4a8f 6%);
-    background-size: 70%;
+    background-size: 100% 46%;
   }
 }
 
@@ -727,7 +727,7 @@ html::-webkit-scrollbar-thumb:active {
 
 .works__slider-slide .slide__row-item {
   position: relative;
-  width: 34%;
+  min-width: 34%;
   min-height: 125px;
 }
 
@@ -801,7 +801,7 @@ html::-webkit-scrollbar-thumb:active {
 .comment__header-title {
   color: black;
   padding-top: 53px;
-  margin-bottom: 7px;
+  padding-bottom: 7px;
 }
 
 @media (max-width: 767px) {

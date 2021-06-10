@@ -51,7 +51,7 @@ const commentSlider=new Swiper('.comment__slider',{
 });
 
 function res(){
-   var width = $('.slide__row-item').width();
+   var width =window.screen.width*0.3;
 	 $('.slide__row').height(width);
 } res();
 
