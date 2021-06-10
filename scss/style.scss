@@ -114,7 +114,7 @@ html::-webkit-scrollbar-thumb:active {
 .header {
   background: url(../img/header__bg-second.jpg) no-repeat 100% 72px,
     linear-gradient(transparent 26%, #574c4a8f 6%);
-  background-size:100% 40%;
+  background-size: 100% 40%;
   @media (min-width: 576px) {
     background: url(../img/header__bg-second.jpg) no-repeat 100% 130px,
       linear-gradient(transparent 26%, #574c4a8f 6%);
@@ -400,6 +400,9 @@ html::-webkit-scrollbar-thumb:active {
             object-fit: cover;
             object-position: center;
             height: 100%;
+            @media (min-width: 1500px) {
+              width: 120%;
+            }
           }
           &-text {
             color: white;

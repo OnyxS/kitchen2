@@ -754,6 +754,12 @@ html::-webkit-scrollbar-thumb:active {
   height: 100%;
 }
 
+@media (min-width: 1500px) {
+  .works__slider-slide .slide__row-item-img {
+    width: 120%;
+  }
+}
+
 .works__slider-slide .slide__row-item-text {
   color: white;
   opacity: 0;
