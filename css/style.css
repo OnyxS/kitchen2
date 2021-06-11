@@ -3,6 +3,7 @@ html {
           box-sizing: border-box;
   font-family: "Cormorant Garamond", serif;
   color: white;
+  overflow-x: hidden;
   font-weight: 300;
   scroll-behavior: smooth;
 }
@@ -713,12 +714,13 @@ html::-webkit-scrollbar-thumb:active {
 
 .works__slider-slide .slide__row-item {
   position: relative;
-  min-width: 34%;
+  min-width: 30%;
   min-height: 125px;
 }
 
 .works__slider-slide .slide__row-item-bg {
   position: absolute;
+  content: " ";
   top: 0;
   bottom: 0;
   left: 0;
