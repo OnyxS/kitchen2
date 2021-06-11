@@ -140,44 +140,6 @@ html::-webkit-scrollbar-thumb:active {
   display: block;
 }
 
-.header {
-  background: url(../img/header__bg-second.jpg) no-repeat 100% 72px, -webkit-gradient(linear, left top, left bottom, color-stop(26%, transparent), color-stop(6%, #574c4a8f));
-  background: url(../img/header__bg-second.jpg) no-repeat 100% 72px, linear-gradient(transparent 26%, #574c4a8f 6%);
-  background-size: 100% 40%;
-}
-
-@media (min-width: 576px) {
-  .header {
-    background: url(../img/header__bg-second.jpg) no-repeat 100% 130px, -webkit-gradient(linear, left top, left bottom, color-stop(26%, transparent), color-stop(6%, #574c4a8f));
-    background: url(../img/header__bg-second.jpg) no-repeat 100% 130px, linear-gradient(transparent 26%, #574c4a8f 6%);
-    background-size: 100% 40%;
-  }
-}
-
-@media (min-width: 767px) {
-  .header {
-    background: url(../img/header__bg-second.jpg) no-repeat 100% 130px, -webkit-gradient(linear, left top, left bottom, color-stop(26%, transparent), color-stop(6%, #574c4a8f));
-    background: url(../img/header__bg-second.jpg) no-repeat 100% 130px, linear-gradient(transparent 26%, #574c4a8f 6%);
-    background-size: 100% 40%;
-  }
-}
-
-@media (min-width: 992px) {
-  .header {
-    background: url(../img/header__bg-second.jpg) no-repeat 100% 190px, -webkit-gradient(linear, left top, left bottom, color-stop(26%, transparent), color-stop(6%, #574c4a8f));
-    background: url(../img/header__bg-second.jpg) no-repeat 100% 190px, linear-gradient(transparent 26%, #574c4a8f 6%);
-    background-size: 100% 40%;
-  }
-}
-
-@media (min-width: 1440px) {
-  .header {
-    background: url(../img/header__bg-second.jpg) no-repeat 100% 220px, -webkit-gradient(linear, left top, left bottom, color-stop(26%, transparent), color-stop(6%, #574c4a8f));
-    background: url(../img/header__bg-second.jpg) no-repeat 100% 220px, linear-gradient(transparent 26%, #574c4a8f 6%);
-    background-size: 100% 46%;
-  }
-}
-
 .header .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -260,9 +222,32 @@ html::-webkit-scrollbar-thumb:active {
   margin-left: 20px;
 }
 
+.header__header {
+  background: url(../img/header__bg-second.jpg) no-repeat 100% 0px, -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0%, #574c4a8f));
+  background: url(../img/header__bg-second.jpg) no-repeat 100% 0px, linear-gradient(transparent 0%, #574c4a8f 0%);
+  background-size: 100% 80%;
+  padding: 50vw 0 36px 0;
+}
+
+@media (min-width: 576px) {
+  .header__header {
+    background: url(../img/header__bg-second.jpg) no-repeat 100% 0px, -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0%, #574c4a8f));
+    background: url(../img/header__bg-second.jpg) no-repeat 100% 0px, linear-gradient(transparent 0%, #574c4a8f 0%);
+    background-size: 100% 85%;
+  }
+}
+
+@media (min-width: 767px) {
+  .header__header {
+    background: url(../img/header__bg-second.jpg) no-repeat 100% 0px, -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0%, #574c4a8f));
+    background: url(../img/header__bg-second.jpg) no-repeat 100% 0px, linear-gradient(transparent 0%, #574c4a8f 0%);
+    background-size: 100% 90%;
+  }
+}
+
 .header__form {
   width: 72.5%;
-  margin: 50% 0 36px auto;
+  margin-left: auto;
   background: #554a48;
   border: 0.5px solid #554a48;
   padding: 10px;
@@ -416,6 +401,7 @@ html::-webkit-scrollbar-thumb:active {
 .header__end {
   position: relative;
   padding-bottom: 52px;
+  background: #574c4a8f;
 }
 
 .header__end-text {
